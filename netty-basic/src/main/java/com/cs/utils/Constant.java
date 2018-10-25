@@ -5,6 +5,6 @@ package com.cs.utils;
  * @date 2018/10/22 0022 下午 3:14
  */
 public interface Constant {
-    int port = 8000;
-    String localhost = "127.0.0.1";
+    int PORT = 8000;
+    String HOST = "127.0.0.1";
 }

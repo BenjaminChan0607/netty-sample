@@ -25,7 +25,7 @@ public class JdkNioServer {
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
         serverSocketChannel.configureBlocking(false);
         ServerSocket serverSocket = serverSocketChannel.socket();
-        InetSocketAddress address = new InetSocketAddress(Constant.port);
+        InetSocketAddress address = new InetSocketAddress(Constant.PORT);
         serverSocket.bind(address);
 
         Selector selector = Selector.open();
@@ -69,7 +69,6 @@ public class JdkNioServer {
                     }
                 }
             }
-
         }
     }
 }

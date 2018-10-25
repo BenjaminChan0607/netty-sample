@@ -16,7 +16,7 @@ public class JdkOioServer {
 
     @Test
     public void server() throws IOException {
-        final ServerSocket serverSocket = new ServerSocket(Constant.port);
+        final ServerSocket serverSocket = new ServerSocket(Constant.PORT);
         try {
             final Socket socket = serverSocket.accept();
             for (;;) {
